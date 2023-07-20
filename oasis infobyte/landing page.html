@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LANDING PAGE</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Josefin+Sans:wght@300;700&family=Kalam&family=Poppins:wght@300;400;600&family=Red+Hat+Display&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-image: url(https://cdn.dribbble.com/users/405060/screenshots/3330698/media/9fae9563dae71484359197df1e9df1ff.jpg?resize=800x600&vertical=center);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .navbar {
+            background-color: aliceblue;
+            height: 75px;
+            width: 100%;
+        }
+
+        .navbar li {
+
+            float: right;
+            list-style: none;
+            margin: 25px;
+            font-family: 'Red Hat Display', sans-serif;
+            font-size: 20px;
+        }
+
+        .navbar li:hover {
+            background-color: rgba(247, 6, 6, 0.528);
+            border-radius: 5px;
+        }
+
+        .navbar li a {
+
+            padding: 5px 5px;
+            text-decoration: none;
+            color: black;
+        }
+
+        #logo {
+            font-size: 40px;
+            color: rgb(237, 11, 11);
+            padding: 15px 54px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        #heading {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 55px;
+            padding: 37px 66px;
+            color: aliceblue;
+        }
+
+        strong {
+            color: red;
+        }
+
+        #subheading {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 25px;
+            padding: 37px 66px;
+            color: aliceblue;
+        }
+
+        #paragraph {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 20px;
+            padding: 37px 66px;
+            color: aliceblue;
+        }
+
+        .freedown {
+            margin-left: 50px;
+            border: 1px solid white;
+            background: crimson;
+            height: 40px;
+            width: 317px;
+            border-radius: 35px;
+            font-size: 15px;
+            cursor: grab;
+        }
+
+        .freedown:hover {
+            background-color: aliceblue;
+        }
+
+        #nextbtn {
+            margin-top: 10px;
+            border: 1px solid white;
+            background-color: rgba(3, 3, 50, 0.646);
+            width: 140px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 10px;
+            padding: 37px 66px;
+            color: aliceblue;
+            font-size: 15px;
+            cursor: grab;
+        }
+
+        #nextbtn:hover {
+            background-color: crimson;
+
+        }
+
+        .nextbtn:hover {
+            background-color: crimson;
+        }
+
+        #logincontainer {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-direction: column;
+            margin-right: 60px;
+            margin-top: 140px;
+            float: right;
+            padding: 10px 10px;
+            border: 1px solid rgb(6, 0, 0);
+            height: 330px;
+            width: 250px;
+            box-shadow: 10px 10px 15px black;
+            border-radius: 10px;
+        }
+
+        #signup {
+            height: 61px;
+            width: 249px;
+            border: 1px solid rgb(4, 4, 4);
+            background-color: rgba(9, 207, 200, 0.758);
+            cursor: grab;
+            color: rgb(0, 1, 2);
+            box-shadow: 5px 7px 12px black;
+            font-size: 20px;
+            border-radius: 10px;
+        }
+
+        #signup:hover {
+            background-color: crimson;
+        }
+
+        #login {
+            height: 61px;
+            width: 249px;
+            border: 1px solid rgb(0, 0, 0);
+            background-color: rgba(9, 207, 200, 0.758);
+            cursor: grab;
+            color: rgb(0, 2, 3);
+            box-shadow: 5px 7px 12px black;
+            font-size: 20px;
+            border-radius: 10px;
+        }
+
+        #login:hover {
+            background-color: crimson;
+        }
+
+        #password {
+            color: rgb(254, 5, 54);
+            font-size: 20px;
+        }
+
+        footer {
+            background-color: rgba(245, 241, 241, 0.976);
+            margin-top: 50px;
+            height: 150px;
+            width: 100%;
+            font-size: 20px;
+            color: rgb(1, 2, 3);
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul><strong>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Premium Version</a></li>
+                <li><a href="#">Download</a></li>
+            </ul></strong>
+            <h1 id="logo"><strong>GO-VIRUS</strong></h1>
+            <!-- login form -->
+            <div id="logincontainer">
+                <div><button id="signup" onclick="func1()">Sign-up</button></div>
+                <!--username:
+                email:-->
+                <div><button id="login"onclick="func2()">Login</button></div>
+                <!--email
+                password:-->
+                <a id="password" href="#">forgot password</a>
+        </nav>
+    </header><br>
+    <h1 id="heading">Free Antivirus <strong>Protection</strong><br>that never Quits !</h1>
+    <p id="subheading">Powerful Security for your Digital Life-made easy</p>
+    <p id="paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br> Nemo earum dolor in quibusdam autem
+        neque magni eius atque mollitia<br> incidunt asperiores aut sit repellat a libero
+        <br>, accusantium, reprehenderit necessitatibus exercitationem.
+    </p>
+    <button class="freedown" id="btn">FREE DOWNLOAD</button><br>
+    <button class="freedown" id="nextbtn">For Windows</button>
+    <button class="freedown" id="nextbtn">For MacOS</button>
+    </div>
+    <footer>
+        <br>
+        &copy Copyright GO Virus All rights reserved
+        <br>
+        Email Us:<EMAIL>govirus2434@gmail.com</EMAIL>
+        <br>
+        Please use it only on trusted websites and devices
+        to avoid any security issues
+    </footer>
+    <script>
+        
+        function func1(){
+           let p=prompt("Enter Username")
+           let e=prompt("Enter email id")
+           let cn=confirm(e)
+           if(cn==true){
+            alert("WELCOME you are logged in!!")
+           }
+           else if(cn==false){
+            alert("Sorry invalid username or email id")
+           }
+           
+        }
+        function func2(){
+            let q=prompt("email-id")
+            let r=prompt("password")
+            let cn=confirm(r)
+            if(cn==true){
+                alert("You are logged in")
+            }
+            else if(cn==false){
+                alert("Sorry invalid password or email-id")
+            }
+         }
+       
+       
+
+    </script>
+</body>
+
+</html>
