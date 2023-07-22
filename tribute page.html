@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tribute page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alata&family=Chakra+Petch&family=DM+Sans:wght@100&family=Josefin+Sans:wght@300;700&family=Kalam&family=Poppins:wght@100;300;400;600&family=Red+Hat+Display&family=Tangerine&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alata&family=Chakra+Petch&family=Josefin+Sans:wght@300;700&family=Kalam&family=Poppins:wght@300;400;600&family=Red+Hat+Display&family=Tangerine&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(247, 243, 243);
+        }
+
+        .navbar {
+            background-color: rgb(0, 5, 5);
+            height: 75px;
+            width: 100%;
+            position: sticky;
+        }
+
+        .navbar li {
+
+            float: left;
+            list-style: none;
+            margin: 25px;
+            font-family: 'Poppins', sans-serif, 'Tangerine', cursive;
+            font-size: 20px;
+        }
+
+        .navbar li:hover {
+            color: black;
+            background-color: rgba(133, 20, 198, 0.648);
+            border-radius: 5px;
+        }
+
+        .navbar li a {
+            padding: 5px 5px;
+            text-decoration: none;
+            color: rgb(254, 252, 252);
+        }
+
+        #williams{
+            border: 1px solid rgb(13, 13, 13);
+            height: 100vh;
+            width: 30vw;
+            float: right;
+            position: sticky;
+        }
+
+        #heading {
+
+            display: inline-block;
+            color: rgb(10, 10, 10);
+            font-size: 99px;
+            font-family: 'Tangerine', cursive;
+        }
+
+        #subheading {
+            margin-left: 50px;
+            font-size: 15px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        #paragraph {
+            font-family: 'DM Sans', sans-serif;
+        }
+
+        .bold {
+            font-size: 30px;
+            font-family: 'Poppins', sans-serif, 'Tangerine', cursive;
+            color: rgb(251, 5, 5);
+            margin-left: 10px;
+        }
+
+        .cl {
+            font-size: 15px;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin-left: 10px;
+
+        }
+        .div{
+             margin-top:30px ;
+        }
+        
+        #footer{
+            color: aliceblue;
+            text-align: center;
+            background-color: black;
+            height:300px;
+            width: 100vw;
+        }
+        #sign{
+            height: 70px;
+            width: 50vw;
+            margin-top: 30px;
+            margin-left: 80px;
+            font-size: 20px;
+            font-family: 'Poppins', sans-serif, 'Tangerine', cursive;
+        }
+        #playsimg {
+            height: 30vh;
+            width: 40vw;
+            margin-left: 10px;
+          }
+
+       /*Designing slidebar*/
+       * {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  width: 50vw;
+  height: 50vh;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+        
+        
+
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul><strong>
+                <li><a href="#">Home</a></li>
+                <li><a id="photo" href="#" onclick="func1()">Photos</a></li>
+                <li><a id="wikipedia" onclick="func2()" href="#">Wikipedia</a></li>
+                <li><a id="books" onclick="func3()" href="#">Books</a></li>
+                <img id="williams"
+                    src="https://www.thoughtco.com/thmb/1HRFfE75czvuZheMhXQuu-XSvUY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/william-shakespeare--portrait-of-william-shakespeare-1564-1616--chromolithography-after-hombres-y-mujeres-celebres-1877--barcelona-spain-118154739-59b9b0ec054ad900116fb824.jpg">
+        </ul>
+    </nav>
+    <p id="heading"><strong>William-Shakespeare</strong></p>
+    <p id="subheading">POET. PLAYWRITE. ACTOR.</p><br>
+    <p id="paragraph">William Shakespeare was an English playwright and poet who is widely considered to be the greatest
+        <br>
+        dramatist of all time. Also known as the "Bard of Avon," Shakespeare's plays and poems are known throughout the
+        world, but his personal <br>
+        life is shrouded in mystery.</p><br>
+    <div class="div">
+    <p class="bold">BIRTH AND BAPTISM</p>
+    <p class="cl">William Shakespeare was the son of John Shakespeare, an alderman and successful glover (glove-maker),
+        and Mary Arden, <br>
+        the daughter of an affluent landowning farmer.<br>
+        He was born in Stratford-upon-Avon and baptised there on 26 April 1564.<br>
+        His actual date of birth remains unknown, but is traditionally observed on 23 April, Saint George's Day. He was
+        the third of eight children, <br>
+        and the eldest surviving son</p></div>
+    <br>
+
+    <div class="div">
+    <p class="bold">MARRIAGE LIFE</p>
+    <p class="cl">Few details of Shakespeare's sexuality are known. At 18, he married 26-year-old Anne Hathaway, who was
+        pregnant.<br>
+        Susanna, the first of their three children,
+        was born six months later on 26 May 1583. Over the centuries, some readers have posited that Shakespeare's
+        sonnets
+        are autobiographical,[281] and point to them as evidence of his love for a young man. Others <br>
+        read the same passages as the expression of intense friendship rather than romantic love.<br>
+        The 26 so-called "Dark Lady" sonnets, addressed to a married woman, are taken as evidence of heterosexual
+        liaisons.</p><br>
+    <img src="https://assets.shortpedia.com/uploads/2021/11/17/1637136341.webp?tr=w-1200,h-600,cm-pad_resize,bg-F3F3F3" id="playsimg"></div>
+    <br>
+
+    <div class="div">
+    <p class="bold">PLAYS AND INFLUENCES</p>
+    <p class="cl">The first recorded works of Shakespeare are Richard III and the three parts of Henry VI, written in
+        the early 1590s during<br> a
+        vogue for historical drama. Shakespeare's plays are difficult to date precisely, however, and studies of the
+        texts suggest that Titus Andronicus,<br> The Comedy of Errors,
+        The Taming of the Shrew, and The Two Gentlemen of Verona may also belong to Shakespeare's earliest period<br>.
+        His first histories, which draw heavily on the 1587
+        edition of Raphael Holinshed's Chronicles of England,Scotland, <br>and Ireland, dramatise the destructive
+        results of weak or corrupt rule and have been interpreted as
+        <br> a justification for the origins of the Tudor dynasty.
+    </p><br>
+
+    <!-- Slideshow container -->
+<div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoQkawHpXHfaB1s3CDC9Fi1kxSBwx_NnW9VJB_eI0giIyeBKzVBQ0Fd2ENVPBRkEVMiFE&usqp=CAU" style="width:100%">
+      
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="https://cdn.bitlanders.com/users/galleries/488215/488215_gallery_56c627adce088_jpg_fa_rszd.jpg" id="playsimg"  style="width:100%">
+     
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTpiaMiN0P0o4ChPyN0K4kTCbWzlxJ1JApWw&usqp=CAU" style="width:100%">
+   
+    </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+
+</div>
+    <br>
+
+    <div class="div">
+        <p class="bold">DEATH</p>
+        <p class="cl">On April 23, 1616, English poet and playwright William Shakespeare died in his hometown of <br>Stratford-upon-Avon at the age of fifty-two.
+            His death occurred on or near his birthday (the exact date of his birth remains unknown), which may have<br> been the source of a later legend that he
+             fell ill and died after a night of heavy drinking with two other writers, Ben Jonson and Michael Drayton</p>
+    </div>
+
+    <br>
+    <footer id="footer"><h2>Signature of William-Shakespeare</h2>
+ <!--signature image-->
+    <div>
+        <img  src="data:image/png;base64,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" id="sign">
+    </div>
+    <br>
+    &copy Copyright All rights reserved
+    <br>
+    To know more visit on wikipedia from the above links in Navigation bar
+    <br>
+    MADE WITH LOVE 
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        //photos
+        function func1() {
+            window.location.href = "https://www.gettyimages.in/photos/william-shakespeare";
+        }
+        //wikipedia
+        function func2() {
+            window.location.href = "https://en.wikipedia.org/wiki/William_Shakespeare";
+        }
+        //books
+        function func3() {
+            window.location.href = "https://www.thriftbooks.com/a/william-shakespeare/196625/";
+        }
+
+        //slidebar
+
+        let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+
+
+    </script>
+</body>
+
+</html>
